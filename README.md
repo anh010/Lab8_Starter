@@ -1,1 +1,6 @@
 # Lab 8 - Starter
+## Check for Understanding
+1. I personally would put the tester in a github actions work flow, this way everyone else who is working on the project can see if something is not working. What if I got an error and I couldnt not push because I can't fix something, not saying that we should be push bad code to github, but sometimes we could just use an extra set of eyes to take a look. 
+2. It would depend of the purpose of the function, if the user directly interacts with the user, and user is expecting something from it then E2E testing would be the way to go. Other wise if its something in the back end that its not necessary for the user to see, then it would not be the way. 
+3. I would not use a unit test to test a message feature of an application, as that would have morea single part to it. You would have to check that the send is working and the recieving is working. You also have to consider when there is no connection and when there is a connection to even send it in the first place
+4. Here a unit is more appropriate because it is something that we can quickly check and does not depend on multiple factors unlike sending a message.
